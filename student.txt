@@ -1,0 +1,25 @@
+class student():
+    def __init__(self,name,standard,marks):
+        self.name=name
+        self.standard=standard
+        self.marks=marks
+
+    def display(self):
+            print("name is : ",self.name)
+            print("standard is : ",self.standard)
+            print("marks is : ",self.marks)
+    def grades(self):
+          if self.marks>75:
+            print("a+")
+          elif self.marks>60 and self.marks<75:
+            print("b+")
+          elif self.marks>45 and self.marks<60:
+            print("c+")
+          else:
+           print("king")
+a=input("enter u name:")
+b=input("enter u standard: ")
+c=int(input("enter u marks: "))
+x=student(a,b,c)
+x.display()
+x.grades()
